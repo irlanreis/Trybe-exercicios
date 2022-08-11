@@ -1,8 +1,9 @@
-Meu primeiro repositório Git.
+Meu primeiro departamento Git.
 O que eu vou aprender na Trybe:
 
 - Unix
-- Bash
+- Festança
 - Git
 - HTML
 - CSS
+- Internet
