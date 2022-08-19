@@ -1,0 +1,37 @@
+
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+ul {
+    background-color: mediumblue;
+}
+
+.color-set {
+    background-color: aqua;
+}
+
+body {
+    font-size: 16px;
+    background-color:lightgreen;
+}
+
+
+p {
+    font-size: 3em;
+    text-align: center;
+    line-height: 10%;
+}
+
+#yellow{
+    background-color: yellow;
+}
+#red{
+    background-color: red;
+}
+#marron{
+    background-color: brown;
+}
