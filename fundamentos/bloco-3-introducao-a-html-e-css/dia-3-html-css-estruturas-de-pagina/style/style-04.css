@@ -1,0 +1,34 @@
+div:hover {
+    border: solid blue 3px; 
+}
+
+div:nth-of-type(1){
+    background-color: yellow;
+    font-style: italic;
+}
+div:nth-of-type(2){
+    background-color: aqua;
+}
+div:nth-of-type(3){
+    background-color: violet;
+    font-size: 35px;
+    font-style: italic;
+}
+div:nth-of-type(4){
+    background-color:darkblue;
+}
+div:nth-of-type(5){
+    background-color: lightpink;
+    font-style: italic;
+}
+
+ h3{
+    color: rgb(7, 123, 131);
+    font-family:'Franklin Gothic Medium', 
+    'Arial Narrow', Arial, ;
+    
+ }
+    
+    
+    
+    

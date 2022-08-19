@@ -1,0 +1,52 @@
+ol{
+    background-color: yellow;
+}
+.par{
+    color:green;
+}
+.impar {
+    text-transform: uppercase;
+
+}
+h1, h3 {
+    color: red;
+}
+li{
+    font-size: 20px;
+}
+li.impar{
+    font-weight: bold;
+}
+.linguagens{
+    color:blue;
+}
+div:nth-of-type(2){
+    background-color:pink;
+
+}
+div:nth-child(2){
+    background-color: pink;
+}
+a:hover{
+    font-weight: bold;
+
+}
+#stackoverflow:hover{
+    color: orange;
+   
+}
+#w3schools:hover{
+    color:green;
+}
+#developer:hover{
+    color: black;
+}
+#devdocs:hover{
+    color: yellow;
+}
+#betrybe:hover{
+    color: green;
+}
+a{
+    text-decoration: none;
+}
