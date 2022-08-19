@@ -1,8 +1,10 @@
 h1 {
     text-align: center;
   }
-ul:nth-child(1){
+ul{
    list-style-type:none;
+   display:flex;
+   width:800px;
 }
   .first {
     background-color: rgb(235, 200, 84);
@@ -10,7 +12,7 @@ ul:nth-child(1){
     height: 50px;
     text-align: center;
     width: 300px;
-    position:absolute;
+    position:absolut;
     left: 550px;
     top:140px;
 
@@ -24,7 +26,8 @@ ul:nth-child(1){
     width: 300px;
     position: absolute;
     top: 190px;
-    left: 406px;
+    left: 106px;
+    margin:auto;
   }
 
   .third {
@@ -34,26 +37,25 @@ ul:nth-child(1){
     text-align: center;
     width: 300px;
     position:absolute;
-    left: 710px;
+    left: 412px;
     top: 190px;
+    margin: auto;
   }
   section{
-    
-    margin: auto
+    background-color: aquamarine;
   }
   #first{
-    height: 160px
-    
+    height: 160px;
+    width: 700px;px;
+    margin-left:auto;
+    margin-right:auto;
   }
   #second{
-    left: 550px;
-    position:absolute;
-    margin-left:30px;
-    margin:5px;
-    width:450px;
-    padding: 0 60px;
-  }
-  .text-classification{
-    display: inline-block;
-  }
-  
+    width:700px;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top:4px;
+    background-color:cornflowerblue;
+
+}
