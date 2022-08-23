@@ -1,2 +1,2 @@
 # Trybe-exercicios
-Neste repositório ficaram os exercicios feitos na trybe
+Neste repositório ficarão os respectivos exercícios de cada bloco.
