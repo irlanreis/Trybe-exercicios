@@ -10,6 +10,10 @@
   
   button {
     margin: 20px;
+    background: darkblue;
+    color:white;
+    border: rgb(255, 148, 25) solid 2px;
+    cursor: pointer;
   }
   
   #btn-add {
@@ -59,6 +63,7 @@
     background: darkblue;
     padding: 40px 25px;
     text-align: center;
+    border: rgb(255, 148, 25) solid 2px;
   }
   
   .month-container ul li {
@@ -120,6 +125,9 @@
   
   .task-list {
     margin-top: 20px;
+    background: darkblue;
+    
+
   }
   
   .task-list-container {
