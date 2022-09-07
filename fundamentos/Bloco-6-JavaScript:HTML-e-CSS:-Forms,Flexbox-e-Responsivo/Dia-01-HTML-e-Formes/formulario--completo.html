@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Formulário Full</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="main">
+        <h1>Full Formulário</h1>
+
+        <form action="" method="get" enctype="multipart/form-data" id="main-form">
+
+            <section id="section-name-picture">
+
+            <div id="set-name">
+                <label for="name-full" class="name-full">Nome Completo:
+                    <input type="text" name="nome" class="name-full" placeholder="Digite seu nome" required>
+                </label>
+            </div>
+
+            <div id="set-email">
+                <label for="input-email">E-mail
+                    <input type="email" name="nome" id="input-email"    placeholder="Digite seu nome" required>
+                </label>
+            </div>
+                 <label for="" id="local-resident">Estado onde você mora:
+                    <select name="Estado" id="input-estado">
+                <option value="RR">Roraima</option>
+                <option value="AM">Amazonas</option>
+                <option value="SE">Sergipe</option>
+                <option value="PA">Para</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </label>
+        <br>
+        <p>Selecione sua foto:</p>
+        <input type="file" name="foto" id="foto-perfil">
+    </section>
+    <section id="food-you" >
+        <p>Comidas Favoritas:</p>
+        <label for="comida-1">
+            <input type="radio" id="comida-1" name="comidas-favoritas" value="pizza" checked>pizza
+        </label>
+        <label for="comida-2">
+            <input type="radio" id="comida-2" name="comidas-favoritas" value="la">Lasanha
+        </label>
+        <label for="comida-3">
+            <input type="radio" id="comida-3" name="comidas-favoritas" value="CA">Carne assada
+        </label>
+        <label for="comida-4">
+            <input type="radio" id="comida-4" name="comidas-favoritas" value="Sa">Salada de alface
+        </label>
+        <br>
+        <p>Escreva algo sobre você:</p>
+        <textarea name="sobre-mim" id="text-area" cols="30" rows="5" placeholder="escreva aqui..."></textarea>
+    </section>
+    <section id="password-footer">
+        <p>Digite sua senha:</p>
+        <label for="input-senha">
+            <input type="password" name="senha" id="input-senha" required placeholder="senha">
+        </label>
+        <br>
+        <label for="checkbox-noticias">
+            <input type="checkbox" name="promocoes" id="checkbox-noticias" >Deseja receber notícias e promoções?
+        </label>
+    </section>
+    <button type="submit">Enviar</button>
+ </form>
+ </main>
+    
+ </body>
+ </html>
