@@ -1,0 +1,43 @@
+
+.container{
+    color: orange;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+#all-conteudo{
+    background-color: rgb(4, 21, 68);
+    margin-left: 25%;
+    position: relative;
+    width: 500px;
+    height: 600px;
+    border:solid 1px;
+}
+.header{
+    font-weight: bold;
+    width: 500px;
+   
+}
+section{
+    width: 500px;
+}
+.information:nth-child(1){
+    position: absolute;
+    display: inline;
+    color: white;
+    width:120px ;
+    border: solid;
+    line-height: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.information:nth-child(2){
+    position: absolute;
+    display: inline;
+    color: white;
+    margin-right:;
+    width:120px ;
+    border: solid;
+    line-height: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
