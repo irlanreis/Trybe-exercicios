@@ -16,7 +16,7 @@
   }
   
   article {
-  display: flex;
+    text-align: justify;
   }
   
   h1 {
@@ -54,13 +54,14 @@
   }
   @media (min-width:1080px) {
     body{
-      background-color:rgb(3, 32, 56);
-      color: darkgoldenrod;
+      background-color:teal;
+      color:aliceblue;
       font-size:28px;
+      
     }
     .container-text{
       display:flex;
-      border: solid 2px blue ;
+      border: solid 2px lightslategray ;
       flex-shrink: 3;
       position:relative;
 
@@ -71,13 +72,20 @@
       align-items: center;
       text-align: center;
       font-size: 24px;
-
+      flex-flow: row wrap;
+      justify-content: center;
     }
   }
   
   figure {
       width: 45%;
       margin-right: 4.5%;
+      background: black;
+      border-radius: 5px;
+      color: white;
+      margin: 0 0 25px 0;
+      padding: 10px;
+      text-align: center;
   }
   
   figcaption {
