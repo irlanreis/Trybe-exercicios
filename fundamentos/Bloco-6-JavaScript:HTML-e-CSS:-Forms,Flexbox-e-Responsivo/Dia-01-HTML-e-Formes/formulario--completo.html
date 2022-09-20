@@ -2,76 +2,85 @@
 <html lang="pt-br">
 
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Formulário Full</title>
-     <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Treino Formulário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main id="main">
+     <div class="container text-center" >
         <h1>Full Formulário</h1>
+     </div>
+        <form action="" method="get" enctype="multipart/form-data" >
 
-        <form action="" method="get" enctype="multipart/form-data" id="main-form">
-
-            <section id="section-name-picture">
-
-            <div id="set-name">
-                <label for="name-full" class="name-full">Nome Completo:
-                    <input type="text" name="nome" class="name-full" placeholder="Digite seu nome" required>
-                </label>
-            </div>
-
-            <div id="set-email">
+            <div class="container text-center form-check">         
+                <label for="name-full" >Nome Completo:</label>
+                <input type="text" name="nome"  required > 
+            </div> 
+            
+            <div class="container text-center">
                 <label for="input-email">E-mail
-                    <input type="email" name="nome" id="input-email"    placeholder="Digite seu nome" required>
-                </label>
-            </div>
-                 <label for="" id="local-resident">Estado onde você mora:
-                    <select name="Estado" id="input-estado">
+                    <input type="email" name="username" id="input-email"    placeholder="Digite seu nome" required autocomplete="username">
+                </label> 
+            </div>  
+            
+            <div class="container text-center">
+                <label for="" id="local-resident">Estado onde você mora:
+                     <select name="Estado" id="input-estado">
                 <option value="RR">Roraima</option>
                 <option value="AM">Amazonas</option>
                 <option value="SE">Sergipe</option>
                 <option value="PA">Para</option>
                 <option value="TO">Tocantins</option>
-            </select>
-        </label>
-        <br>
-        <p>Selecione sua foto:</p>
-        <input type="file" name="foto" id="foto-perfil">
-    </section>
-    <section id="food-you" >
-        <p>Comidas Favoritas:</p>
-        <label for="comida-1">
-            <input type="radio" id="comida-1" name="comidas-favoritas" value="pizza" checked>pizza
-        </label>
-        <label for="comida-2">
-            <input type="radio" id="comida-2" name="comidas-favoritas" value="la">Lasanha
-        </label>
-        <label for="comida-3">
-            <input type="radio" id="comida-3" name="comidas-favoritas" value="CA">Carne assada
-        </label>
-        <label for="comida-4">
-            <input type="radio" id="comida-4" name="comidas-favoritas" value="Sa">Salada de alface
-        </label>
-        <br>
-        <p>Escreva algo sobre você:</p>
-        <textarea name="sobre-mim" id="text-area" cols="30" rows="5" placeholder="escreva aqui..."></textarea>
-    </section>
-    <section id="password-footer">
-        <p>Digite sua senha:</p>
-        <label for="input-senha">
-            <input type="password" name="senha" id="input-senha" required placeholder="senha">
-        </label>
-        <br>
-        <label for="checkbox-noticias">
-            <input type="checkbox" name="promocoes" id="checkbox-noticias" >Deseja receber notícias e promoções?
-        </label>
-    </section>
-    <button type="submit">Enviar</button>
- </form>
- </main>
+                     </select>
+                </label>
+            </div>
+
+            <div class="container text-center">
+                 <p>Selecione sua foto:</p>
+                 <input type="file" name="foto" id="foto-perfil">
+            </div>
     
+
+
+            <div class="container text-center">
+                <p>Comidas Favoritas:</p>
+                  <label for="comida-1">
+                     <input type="radio" id="comida-1" name="comidas-favoritas" value="pizza" checked>pizza
+                  </label>
+                  <label for="comida-2">
+                     <input type="radio" id="comida-2" name="comidas-favoritas" value="la">Lasanha
+                  </label>
+                  <label for="comida-3">
+                     <input type="radio" id="comida-3" name="comidas-favoritas" value="CA">Carne assada
+                  </label>
+                  <label for="comida-4">
+                     <input type="radio" id="comida-4" name="comidas-favoritas" value="Sa">Salada de alface
+                  </label>
+                <p>Escreva algo sobre você:</p>
+                     <textarea name="sobre-mim" id="text-area" cols="30" rows="5" placeholder="escreva aqui...">
+                         </textarea>
+            </div>
+
+
+            <div class="container text-center">
+                 <p>Digite sua senha:</p>
+                     <label for="input-senha">
+                 <input type="password" name="current-password" id="input-senha" required placeholder="senha" autocomplete="current-password">
+                     </label>
+            </div>
+
+            <div class="container text-center">
+                 <label for="checkbox-noticias">
+                 <input type="checkbox" name="promocoes" id="checkbox-noticias" >Deseja receber notícias e promoções?
+                 </label>
+            </div>
+            <div class="container text-center">
+                <button type="submit">Enviar</button>
+            </div>
+
+ </form>
  </body>
  </html>
