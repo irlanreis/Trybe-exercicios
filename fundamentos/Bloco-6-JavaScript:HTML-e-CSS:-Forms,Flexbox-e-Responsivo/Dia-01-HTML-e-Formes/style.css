@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    line-height: 1.6;
+    background-color: darkred;
+    color: khaki;
+}
+#main{
+    margin-top:8%;
+    margin-left: 18%;
+    width: 65%;
+    text-align: center;
+    background-color: rgb(102, 13, 13);
+    border: 1px solid ;
+    font-family:Georgia, 'Times New Roman', Times;
+    
+}
+h1{
+    width: 100%;
+    margin: 20px auto ;
+    background-color:darkslategray;
+}
+#section-name-picture{
+    background-color:darkslategray;
+
+}
+
+.name-full {
+    width: 420px;
+    padding: 5px;
+    margin: 0 0 10px 0 ;
+}
+#input-email{
+    padding: 5px;
+    background-color:rgb(255, 222, 38);
+}
+
+#food-you {
+    margin: 10px auto ;
+    background-color: darkslategray
+    ;
+}
+#password-footer{
+    background-color: darkslategray
+}
