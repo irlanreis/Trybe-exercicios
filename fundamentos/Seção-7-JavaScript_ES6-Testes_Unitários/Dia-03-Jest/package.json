@@ -1,0 +1,12 @@
+{
+  "name": "dia-03-jest",
+  "version": "1.0.0",
+  "description": "novo dia vqv.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
