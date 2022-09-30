@@ -1,0 +1,36 @@
+#btn-filter {
+  background-color: green;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 20px;
+  width: 200px;
+  height: 60px;
+  font-size: 30px;
+  color: darkorange;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#btn-clear {
+  color: red;
+  background-color: green;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 20px;
+  width: 200px;
+  height: 60px;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+p {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: white;
+}
+
+body {
+  background-color: darkslategray
+}

@@ -1,0 +1,30 @@
+#btn-every{
+    background-color: rgb(5, 40, 101);
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 20px;
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+    color:white;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  #btn-every:active{
+    background-color:#294ddc;
+  }
+  p{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: white;
+  }
+body{
+    background-color: cadetblue;
+}
+div{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: rgb(110, 20, 20);
+}

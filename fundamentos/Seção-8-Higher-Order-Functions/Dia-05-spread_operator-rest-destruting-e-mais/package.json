@@ -1,0 +1,15 @@
+{
+  "name": "dia-05-spread_operator-rest-destruting-e-mais",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.1.1"
+  }
+}
