@@ -1,0 +1,3 @@
+const sum = (...args) => args.reduce((accumulator, current) => accumulator + current, 0);
+console.log(sum(4, 7, 8, 9, 60,)); // 88
+//No exemplo acima, a função sum calcula a soma de todos os argumentos passados a ela - independente do número. Como o parâmetro rest “empacota” todos os argumentos em um array, podemos utilizar o reduce para somar tudo o que estiver dentro desse array. Experimente passar mais números como argumento para a função sum. Você verá que, independente do número de argumentos passados, a função vai executar a soma. Sua função é muito mais flexível quando queremos passar múltiplos parâmetros com o rest, pois você não precisa especificar quantos argumentos a função irá receber!
