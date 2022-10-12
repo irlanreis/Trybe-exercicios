@@ -6,7 +6,7 @@ const consultaCep = async (cep) => {
         const resposta = await requisição.json();
 
         const { logradouro } = resposta;
-        console.log(logradouro);
+        //  console.log(logradouro);
 
         return logradouro;
     } catch (error) {

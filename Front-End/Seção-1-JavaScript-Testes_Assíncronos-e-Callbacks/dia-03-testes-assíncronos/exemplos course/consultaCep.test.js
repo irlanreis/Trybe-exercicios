@@ -1,4 +1,6 @@
 
+const fetch = require('node-fetch');
+
 const { consultaCep } = require('./consultarCep');
 
 describe('Testa a função consultaCep', () => {
