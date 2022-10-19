@@ -1,1 +1,1 @@
-Vamo que Vamo, cada dia um aprendizado novo ihuuuu
+Vamo que Vamo, cada dia um aprendizado novo ihuuuu.
