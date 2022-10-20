@@ -14,4 +14,6 @@ code {
 
 .info {
   background-color: aqua;
+  display: flex;
+  justify-content: center;
 }
