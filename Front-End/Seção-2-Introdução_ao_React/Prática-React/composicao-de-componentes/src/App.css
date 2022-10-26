@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color:rgba(40, 98, 224, 0.623);
+  color:rgb(240, 218, 20);
+  font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+h1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
