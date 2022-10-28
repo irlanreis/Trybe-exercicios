@@ -1,0 +1,3 @@
+<p>Neste repositório se encontram alguns exempos do uso de React em formulários e exercícios sobre componentes com estado...
+Todos organizados por dia e conteúdo.
+#VQV</p>
