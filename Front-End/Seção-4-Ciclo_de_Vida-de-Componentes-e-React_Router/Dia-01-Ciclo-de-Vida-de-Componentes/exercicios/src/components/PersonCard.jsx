@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../App.css'
 
 class PersonCard extends Component {
   render() {
     const { person: { name, email, age, image } } = this.props;
     return (
-      <div>
+      <div className="container">
         <p>{name}</p>
         <p>{email}</p>
         <p>{age}</p>
-        <img src={ image } alt={ name }/>
+        <img src={ image } alt={ name } className="img"/>
       </div>
     )
   }
