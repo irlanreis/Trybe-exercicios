@@ -1,2 +1,2 @@
 # Exercício concluído uau
-![](../exerc%C3%ADcioCourse.png)
+![image](../exerc%C3%ADcioCourse.png)
