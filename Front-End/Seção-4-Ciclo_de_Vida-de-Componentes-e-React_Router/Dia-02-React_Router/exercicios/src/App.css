@@ -1,0 +1,28 @@
+body {
+    align-items: center;
+    background: linear-gradient(to left, rgba(32, 178, 171, 0.767) , rgb(65, 87, 148));
+    display: flex;
+    justify-content: center;
+    min-height: 20vh;
+}
+
+.container { 
+    align-items: center;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    border: solid 2px rgb(1, 1, 66);
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    justify-content: center;
+}
+.button {
+    background-color: lightgreen;
+    border-radius: 10px;
+    color:rgb(29, 32, 32);
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    padding: 6px 10px;
+}
