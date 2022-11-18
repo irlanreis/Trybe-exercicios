@@ -10,8 +10,14 @@ test('Testando um componente, caso o email seja válido', () => {
 });
 
 test('Testando componente, caso o email seja inválido.', () => {
-    const EMAIL_USER = 'emailerrado';
+    const EMAIL_USER = 'email errado';
     render(<ValidEmail email={ EMAIL_USER }/>);
     const isValid = screen.getByText('Email Inválido');
     expect(isValid).toBeInTheDocument();
 });
+
+test('Testando se o componente não aparece caso o campo e-mail esteja vazio.', () => {
+    render(<ValidEmail email="" />)
+    const isValidText = screen.queryByTestId('id-is-email-valid');
+    expect(isValidText).not.toBeInTheDocument();
+})

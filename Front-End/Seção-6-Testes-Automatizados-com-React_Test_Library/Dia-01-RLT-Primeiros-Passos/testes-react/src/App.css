@@ -42,10 +42,6 @@
   }
 }
 
-.container-label-email {
-  display: flex;
-  margin: 5px;
-}
 
 h2{
   float: top;
@@ -53,12 +49,6 @@ h2{
   top: 0;
 }
 
-#id-email{
-  font-size: 16px;
-  margin-left: 10px;
-  outline:none;
-  background-color: #FCFCFC;
-}
 #id-email:focus {
   box-shadow: 2px 0px 5px 7px #424D84;
 }
@@ -87,3 +77,39 @@ h2{
 #btn-back:active {
   color:white;
 }
+
+.green-text {
+  color: springgreen;
+}
+
+.red-text {
+  color: red;
+}
+
+
+.label-email {
+  
+}
+
+.container-email {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#id-email{
+  font-size: 16px;
+  margin-left: 0;
+  outline:none;
+  border: none;
+}
+.label-placeholder-copy {
+  position: absolute;
+  top: 8px;
+  color:rgb(95, 93, 93);
+  font-size: 16px;
+  background-color: white;
+}
+p {
+  margin: 10px;
+}
+

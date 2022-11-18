@@ -14,7 +14,11 @@ class App extends Component {
   }
 
   changeSaveEmail = (value) => {
-    this.setState({ saveEmail: value, email: '', })
+
+    this.setState({
+      saveEmail: value,
+      email: ''
+    })
   }
 
   render() {
@@ -24,30 +28,36 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <img
-              src={ logo }
+              src={logo}
               className="App-logo"
               alt="logo"
             />
-            <div>
               <label
                 htmlFor="id-email"
-                className="container-label-email"
+                className="label-email"
               >
                 Email:
+              </label>
+            <div className="container-email">
+              <div htmlFor="id-email" className="label-placeholder-copy">Digite seu email</div>
                 <input
-                  value={ email }
+                  value={email}
                   id="id-email"
                   type="email"
+                  required
+                  // pattern=".+ .+"
                   placeholder="Digite seu email"
-                  onChange={ (e) => this.changeEmail(e.target.value) }
+                  onChange={(e) => this.changeEmail(e.target.value)}
                 />
-              </label>
+              <p className="warning">Preencha com email válido!</p>
+            </div>
+            <div className="container-buttons">
               <input
                 value="Enviar"
                 id="btn-send"
                 data-testid="id-send"
                 type="button"
-                onClick={ () => this.changeSaveEmail(email) }
+                onClick={() => this.changeSaveEmail(email)}
               />
               <input
                 value="Voltar"
@@ -56,7 +66,7 @@ class App extends Component {
               />
             </div>
             <ValidEmail
-              email={ saveEmail } />
+              email={saveEmail} />
           </header>
         </div>
       </>
