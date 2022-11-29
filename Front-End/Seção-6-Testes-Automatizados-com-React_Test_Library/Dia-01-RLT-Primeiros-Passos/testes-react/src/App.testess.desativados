@@ -1,0 +1,48 @@
+import { render, screen } from '@testing-library/react';
+import App from './App';
+
+// test('renders learn react link', () => {
+//   render(<App />);
+//   const linkElement = screen.getByText(/learn react/i);
+//   expect(linkElement).toBeInTheDocument();
+// });
+
+test('Verficando se existe o campo Email', () => {
+  // Acessar o elemento na tela
+  render(<App />);
+  const inputEmail = screen.getByLabelText('Email:');
+  // interagir com os elementos (se necessário)
+  // fazer os testes
+  expect(inputEmail).toBeInTheDocument();
+  expect(inputEmail).toHaveProperty('type', 'email')
+});
+
+// test('Verficando se existe um botão', () => {
+//   // Acessar o elemento na tela
+//   render(<App />);
+//   const btn = screen.getAllByRole('button');
+//   // interagir com os elementos (se necessário)
+//   // fazer os testes
+//   expect(btn).toBeInTheDocument();
+//   expect(btn).toHaveProperty('type', 'button')
+// });
+
+test('Verficando se existe dois botões', () => {
+  // Acessar o elemento na tela
+  render(<App />);
+  const btn = screen.getAllByRole('button');
+  // interagir com os elementos (se necessário)
+  // fazer os testes
+  expect(btn).toHaveLength(2);
+});
+
+test('Verficando se existe um botão de enviar', () => {
+  // Acessar o elemento na tela
+  render(<App/>)
+  const btnSend = screen.getByTestId('id-send');
+  // Fazer os testes
+  expect(btnSend).toBeInTheDocument();
+  expect(btnSend).toHaveProperty('type', 'button');
+  expect(btnSend).toHaveValue('Enviar');
+  // Buscamos o elemento pelo data-testid e verificamos se ele está na tela. Em seguida, verificamos se este elemento é um botão e, com a propriedade toHaveValue, conferimos se possui o texto Enviar.
+});
