@@ -1,6 +1,6 @@
-# Dia 02 agora estadaremos o uso do Redux com React
+# Dia 02 agora estudaremos o uso do Redux com React
 
-# Você será capaz de:
+# Capacidades desenvolvidas:
 
 Criar um store Redux em aplicações React.
 
