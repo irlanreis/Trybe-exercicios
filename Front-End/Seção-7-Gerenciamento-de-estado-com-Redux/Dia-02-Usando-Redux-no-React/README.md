@@ -14,7 +14,7 @@ Conectar Redux aos componentes React.
 
 Adicionar mais de um reducer a uma store.
 
-#Por que isso é importante?
+# Por que isso é importante?
 
 A maioria das bibliotecas, como React, Angular etc, possuem uma forma interna de gerenciar o estado da aplicação sem o auxílio ou necessidade de uma ferramenta externa. Isto funciona bem para aplicações que possuem poucos componentes mas, à medida que a aplicação cresce, o gerenciamento de estados compartilhados entre componentes torna-se uma tarefa complicada e desgastante.
 
