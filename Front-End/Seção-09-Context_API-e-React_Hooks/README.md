@@ -1,1 +1,1 @@
-Nesta nova seção aprenderemos sobre Context api e React Hooks, conceitos de extrema importancia em react.
+Nesta nova seção aprenderemos sobre Context api e React Hooks, conceitos de extrema importancia em react..
