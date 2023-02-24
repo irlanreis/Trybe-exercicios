@@ -34,6 +34,5 @@ services:
 volumes:
   db_data: {}
 
-# 8 - Suba os serviços utilizando docker-compose e abra no terminal para validar o funcionamento.
-
+# 8 - Suba os serviços utilizando docker-compose e abra no terminal para validar o funcionamento.s
     

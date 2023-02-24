@@ -18,7 +18,7 @@ services:
       - my-network
 
   db:
-    # platform: Linux/x86_64
+    # platform: Linux/x86_64s
     image: mysql:5.7.40
     restart: always
     environment:
