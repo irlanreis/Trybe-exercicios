@@ -1,0 +1,3 @@
+Qual é a função do código de status 401?
+
+Indica que a solicitação feita para um servidor não foi  autorizada ou autenticada. É mais utilizado quando um sercidor requer que o cliente forneça credenciais de autenticação como nome de usuário e senha para acessar o recurso solicitado.
