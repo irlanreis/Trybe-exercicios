@@ -1,0 +1,3 @@
+Qual é a função do código de status 400 e 422? Pelo que entendi o erro 400 é retornado quando o servidor não consegue entender a solicitação do cliente decido a sintaxe incorreta ou mal formada na requisição, já o erro 422 o servido até entende a reqisição mas não pode processar a mesma por causa de erros semânticos ou de validação.
+
+Segundo o chatGPT O erro 400 significa que a requisição enviada pelo cliente tem algum problema de formatação ou de sintaxe, enquanto o erro 422 significa que a requisição está formatada corretamente, mas tem informações inválidas ou incompletas. Em outras palavras, o erro 400 é mais sobre problemas na forma como a solicitação é feita, enquanto o erro 422 está relacionado mais com o conteúdo da solicitação.
