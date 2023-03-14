@@ -1,4 +1,5 @@
 const express = require('express');
+const { readFile } = require('fs');
 const fs = require('fs').promises;
 const path = require('path');
 
@@ -56,6 +57,45 @@ app.post('/movies', async (req, res) => {
         res.status(500).send({ message: error.message })
     };
 });
+
+app.put('/movies/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        const { movie, price } = req.body;
+
+        const movies = await readfile();
+        // Localiza o index correspondente ao id do parametro da requisição.
+        const index = movies.findIndex((element) => element.id === Number(id));
+        // Altere o valor do elemento pelo que foi fornecido pelo corpo da requisição.
+        movies[index] = { id: Number(id), movie, price };
+
+        // Faz o parse das informações para string JSON.
+        // Os dois últimos parâmetros passados no método stringify são opcionais e têm por objetivo melhorar a formatação do arquivo JSON.
+        const updateMovies = JSON.stringify(movies, null, 2);
+        // Escreve no arquivo movies.json o conteúdo atualizado.
+        await fs.writeFile(moviesPath, updateMovies);
+        // utiliza o método status para enviar o código de resposta HTTP 200 e retorna o filme atualizado em formato json para o cliente como resposta.
+        res.status(200).json(movies[index]);
+    } catch (error) {
+        res.status(500).send({ message: error.message })
+    }
+});
+
+app.delete('/movies/:id', async (req, res) => {
+    try {
+        const { id } = req.params
+        const movies = await readfile();
+
+        const filteredMovies = movies.filter((movie) => movie.id !== Number(id));
+
+        const updateMovies = JSON.stringify(filteredMovies, null, 2);
+        await fs.writeFile(moviesPath, updateMovies)
+
+        res.status(204).end();
+    } catch (error) {
+        res.status(500).send({ message: error.message })
+    }
+})
 
 
 module.exports = app;
