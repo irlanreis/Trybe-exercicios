@@ -19,6 +19,20 @@ const readfile = async () => {
 
 readfile();
 
+app.get('movies/search', async (req, res) => {
+    try {
+        const { q } = req.query;
+        const movies = await readfile();
+
+        if(q) {
+            const filteredMovies = movies.filter((element) => element.movie.includes(q));
+            return res.status(200).json(filteredMovies);
+        }
+    } catch (error) {
+        res.status(500).send({ message: error.message });
+    }
+})
+
 app.get('/movies/:id', async (req, res) => {
     try {
         const movies = await readfile();
