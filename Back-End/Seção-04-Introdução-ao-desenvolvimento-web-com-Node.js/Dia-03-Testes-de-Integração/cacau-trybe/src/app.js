@@ -1,7 +1,9 @@
 const express = require('express');
 const cacauTrybe = require('./cacauTrybe');
+const { expect } = require('chai');
 
 const app  = express();
+app.use(express.json())
 
 app.get('/chocolates/search', async (req, res) => {
     const { name } = req.query;
@@ -33,6 +35,15 @@ app.get('/chocolates/brand/:brandId', async (req, res) => {
     const chocolates = await cacauTrybe.getChocolatesByBrand(Number(brandId));
 
     res.status(200).json({ chocolates });
+});
+
+app.put('/chocolates/:id', async (req, res) => {
+    const { id } = req.params;
+    const { name, brandId } = req.body;
+    const updateChocolate = await cacauTrybe.updateChocolate(Number(id), { name, brandId });
+
+    if (updateChocolate) return res.status(200).json({ chocolate: updateChocolate });
+    res.status(404).json({ message: 'chocolate not found' });
 });
 
 
