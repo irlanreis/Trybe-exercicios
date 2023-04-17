@@ -1,5 +1,4 @@
 const express = require('express');
-const { readFile } = require('fs');
 const fs = require('fs').promises;
 const path = require('path');
 
@@ -23,15 +22,16 @@ app.get('movies/search', async (req, res) => {
     try {
         const { q } = req.query;
         const movies = await readfile();
-
-        if(q) {
+        console.log(movies);
+        if (q) {
             const filteredMovies = movies.filter((element) => element.movie.includes(q));
             return res.status(200).json(filteredMovies);
         }
-    } catch (error) {
-        res.status(500).send({ message: error.message });
+        res.status(200).end();
+    } catch (err) {
+        res.status(500).send({ message: err.message });
     }
-})
+});
 
 app.get('/movies/:id', async (req, res) => {
     try {
@@ -58,7 +58,7 @@ app.post('/movies', async (req, res) => {
         const movies = await readfile();
 
         const newMovie = {
-            id: movies[movies.length -1].id +1,
+            id: movies[movies.length - 1].id + 1,
             movie,
             price,
         };
