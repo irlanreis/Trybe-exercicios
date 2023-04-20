@@ -1,9 +1,10 @@
 const express = require('express');
+const validateName = require('../middlewares/validateName');
 
 const app = express();
 app.use(express.json());
 
-app.post('/activites', async (req, res) => {
+app.post('/activites', validateName, async (req, res) => {
     res.status(201).json({ message: 'Atividade cadastrada com sucesso!' });
 })
 
