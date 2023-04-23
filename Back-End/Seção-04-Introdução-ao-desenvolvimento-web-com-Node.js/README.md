@@ -1,0 +1,1 @@
+PRimeiro dia de estudo seguimos com muito aprendizado

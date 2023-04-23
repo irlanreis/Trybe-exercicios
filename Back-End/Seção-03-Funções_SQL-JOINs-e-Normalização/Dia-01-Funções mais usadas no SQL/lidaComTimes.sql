@@ -1,0 +1,8 @@
+USE sakila;
+
+SELECT DATEDIFF('2020-01-31', '2020-01-01');
+
+SELECT DATEDIFF('2023-03-22', '2030-01-20'); -- -2496 Dias antes;
+SELECT DATEDIFF('2030-01-20', '2023-03-22'); -- 2496 Dias depois;
+
+SELECT TIMEDIFF('10:25:45', '11:00:00'); -- -00:34:15 Minutos antes;
