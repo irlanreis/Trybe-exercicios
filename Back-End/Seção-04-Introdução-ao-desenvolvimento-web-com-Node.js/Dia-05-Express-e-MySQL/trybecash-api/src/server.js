@@ -8,9 +8,9 @@ app.listen(PORT, async () => {
     // console.log(`Valor da variável de ambiente $USER: ${process.env.USER}`);
 
     // O código abaixo é para testarmos a comunicação com o MySQL
-    const [result] = await connection.execute('SELECT 1');
+    // const [result] = await connection.execute('SELECT 1');
 
-    if (result) {
-        console.log('MySQL connection OK');
-    }
+    // if (result) {
+    //     console.log('MySQL connection OK');
+    // }
 });
