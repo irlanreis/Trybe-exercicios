@@ -1,1 +1,1 @@
-PRimeiro dia de estudo seguimos com muito aprendizado
+Este repositório contém alguns exercícios de node com express e MySQL!
