@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  app_trybe:
+    container_name: app_exercicio-01
+    image: node:18-alpine
+    working_dir: /usr/exercicio/src/app
+    volumes: 
+      - ./:/usr/exercicio/src/app
+    stdin_open: true
+    tty: true
+    env_file:
+      - .env
+    ports:
+      - 3001:3000
+    depends_on: 
+      - db_trybe
+  db_trybe:
+    container_name: db_exercicio-01
+    image: mysql:5.7
+    restart: always
+    env_file:
+      - .db_env
+    volumes:
+      - ./data/:/var/lib/mysql
+    ports:
+      - 33060:3306
