@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, DataTypes) => {
-    return queryInterface.createTable('Book', {
+    return queryInterface.createTable('Books', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -21,7 +21,7 @@ module.exports = {
         allowNull: false,
         type: DataTypes.INTEGER
       },
-      createAt: {
+      createdAt: {
         allowNull: false,
         type: DataTypes.DATE
       },
