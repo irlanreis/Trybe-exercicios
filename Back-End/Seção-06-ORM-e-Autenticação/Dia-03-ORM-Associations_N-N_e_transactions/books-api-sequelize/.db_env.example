@@ -1,0 +1,2 @@
+MYSQL_ROOT_PASSWORD=<your-var>
+MYSQL_DATABASE=<your-var>
