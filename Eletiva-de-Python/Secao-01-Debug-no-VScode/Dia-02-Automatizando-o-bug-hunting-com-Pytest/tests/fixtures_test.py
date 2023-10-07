@@ -7,7 +7,7 @@ def test_my_function(monkeypatch):
     def mock_input(_):
         return "Python"
 
-    # Trocamos a input do sistema pela nossa mock_input
+    # Trocamos a input do sistema pela nossa mock_input.
     monkeypatch.setattr("builtins.input", mock_input)
     output = my_function()
 
