@@ -1,0 +1,25 @@
+{
+  // Use o IntelliSense para saber mais sobre os atributos possíveis.
+  // Focalizar para exibir as descrições dos atributos existentes.
+  // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Arquivo Atual",
+      "type": "python",
+      "request": "launch",
+      "purpose": [ // ajusta o vscode para execução de teste em mode debug
+        "debug-test"
+      ],
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": false, // habilita o debug de bibliotecas externas
+      "autoReload": { // ativa o carregamento automático de variáveis
+        "enable": true
+      },
+      "env": { // Define uma variável de ambiente para testes
+        "DEBUG_MODE": "true"
+      }
+    }
+  ]
+}
