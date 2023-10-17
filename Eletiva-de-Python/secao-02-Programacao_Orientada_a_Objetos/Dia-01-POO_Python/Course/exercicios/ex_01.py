@@ -10,4 +10,6 @@ def sum(lists: List[int]) -> int:
     return total
 
 
-print(sum([1, 2, 3, 4, 5]))
+values = [1, 2, 3, 4, 5]
+
+print(sum(values))
