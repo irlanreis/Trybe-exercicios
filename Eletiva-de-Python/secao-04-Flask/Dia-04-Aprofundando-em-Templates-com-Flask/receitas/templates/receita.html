@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Receitas</title>
+    <meta charset="UTF-8">
+    <title>Project</title>
 </head>
-
 <body>
-  <!-- nome da receita -->
-  <h1>{{ nome }}</h1>
-  <!-- Os ingredientes da receita, sendo que cada ingrediente deve ser um item separado; -->
-  <ul>
+    <h1>{{ nome }}</h1>
     {% for ingrediente in ingredientes %}
-    <li>{{ ingrediente|capitalize }}</li>
+        <p>{{ ingrediente|capitalize }}</p>
     {% endfor %}
-  </ul>
-  <!-- Preparação da receita, um item só. -->
-  <p>{{ preparo }}</p>
+    {% for passo in preparo|converte_para_lista %}
+        <p>{{ passo }}</p>
+    {% endfor %}
 </body>
-
 </html>
