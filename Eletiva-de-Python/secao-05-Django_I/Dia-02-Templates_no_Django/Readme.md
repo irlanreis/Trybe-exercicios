@@ -1,0 +1,5 @@
+O Django é um framework robusto que pode ser usado para desenvolver aplicações web. O uso dos templates permite que você crie, na própria aplicação com o Back-end, as páginas que serão mostradas para as pessoas usuárias que usam sua aplicação.
+
+Nos templates Django é possível fazer a estilização de acordo com suas necessidades e, usando a Linguagem de Templates do Django (Django Template Language, ou DTL), é possível inserir lógica de programação e acessar variáveis dentro deles. Essas características permitem que você crie páginas dinâmicas e personalizadas.
+
+Além disso, compreender o funcionamento das views, dos templates, das rotas e também de como esses se relacionam é fundamental para entender o funcionamento do Framework. Dominar esses conceitos abre portas para a criação de aplicações web completas, flexíveis e personalizadas usando o Django.
