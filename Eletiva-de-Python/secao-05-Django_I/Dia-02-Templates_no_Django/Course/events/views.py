@@ -4,7 +4,8 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, "home.html")
+    contex = {"company": "Trybe"}
+    return render(request, "home.html", contex)
 
 
 def about(request):
