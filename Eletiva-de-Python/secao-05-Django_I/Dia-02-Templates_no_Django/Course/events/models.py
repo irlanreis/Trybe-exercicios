@@ -11,7 +11,7 @@ class Event(models.Model):
     )
     title = models.CharField(max_length=100)
     description = models.TextField()
-    date = models.DateField()
+    date = models.DateTimeField()
     location = models.CharField(max_length=200)
     event_type = models.CharField(max_length=50, choices=TYPE_CHOICES)
     is_remote = models.BooleanField(default=False)
