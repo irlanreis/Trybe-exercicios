@@ -1,0 +1,1 @@
+Nessa seção vamos colocar os pingos nos is: iremos aprender a construir autenticação, testes e a fazer o deploy da aplicação - assim você terá no bolso um conjunto completíssimo de ferramentas para tirar de letra os testes técnicos de Django.
