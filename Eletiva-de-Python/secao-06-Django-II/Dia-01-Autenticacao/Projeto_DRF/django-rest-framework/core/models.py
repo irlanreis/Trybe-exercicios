@@ -23,8 +23,8 @@ class Music(models.Model):
 class Playlist(models.Model):
     name = models.CharField(max_length=50)
     is_active = models.BooleanField(default=False)
-    created_at = models.DateField(auto_now_add=True)
-    updated_at = models.DateField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     musics = models.ManyToManyField("Music", related_name="playlists")
 
     def add_music(self, music):
@@ -35,5 +35,5 @@ class Playlist(models.Model):
         self.musics.remove(music)
         self.save()
 
-    def __str__(self) -> str:
+    def __str__(self):
         return self.name
